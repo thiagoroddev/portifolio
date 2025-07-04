@@ -1,0 +1,446 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-destaque: #1F3FE0; 
+    --cor-primaria: #64C5DE; 
+    --cor-secundaria: #7764DE; 
+    --cor-terciaria: #649FDE; 
+    --cor-hover: #6478DE; 
+    --cor-fundo: #383737;
+    --cor-texto-white: #fff;
+    --cor-texto-cinza: #ffffff91;
+    --cor-borda-transp: #11111149;
+    --cor-borda-cinza:#eeebeb57;
+    --cor-sombra:#00000083;
+
+}
+
+html {
+    background-color: var(--cor-primaria);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.separador {
+    height: 180px;
+    background-color: var(--cor-secundaria);
+    box-shadow: 2px 2px 20px var(--cor-sombra);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separador h2 {
+    color: var(--cor-texto-cinza);
+}
+
+h3 {
+    color: var(--cor-texto-white);
+    margin: 30px 0;
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+p {
+    color: var(--cor-texto-white);
+    font-size: larger;
+}
+
+/* Cabeçalho */
+
+.home {
+    color: var(--cor-texto-white);
+    text-align: center;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+    margin:0px auto;
+    height: 180px;
+    background-color: var(--cor-secundaria);
+}
+
+.menu > ul li {
+    background-color: var(--cor-secundaria);
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+    margin: 20px;
+    padding: 20px;
+}
+
+.menu ul li:hover {
+    background-color: var(--cor-terciaria);
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--cor-terciaria);
+}
+
+.menu a {
+    color: var(--cor-texto-white);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu a:hover {
+    font-size: 1.7rem;
+    transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+/* ------------------ Perfil --------------------*/
+
+
+.container-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    min-width: 800px;
+    margin: 100px auto;
+    border-radius: 20px;
+}
+
+.perfil {
+    margin: 0 50px;
+    background-color: var(--cor-terciaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid var(--cor-borda-cinza);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+    height: 800px;
+}
+
+.perfil h4 {
+    color:var(--cor-texto-white);
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.foto-perfil  {
+    width: 550px;
+    height: 550px;
+    border-radius: 20%;
+    border: 2px solid var(--cor-borda-cinza);
+    box-shadow: 2px 2px 10px var(--cor-sombra);
+    overflow: hidden;
+}
+
+.foto-perfil img {
+    width: 100%;
+    object-fit: cover; 
+    object-position: center top;
+    
+}
+
+/* ------------------ Habilidades --------------------*/
+
+
+.icons {
+    width: 30px;
+    
+}
+
+.habilidades li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.habilidades {
+    background-color: var(--cor-terciaria);
+    width: 500px;
+    min-width: 300px;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid var(--cor-borda-transp);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+    height: 100%;
+}
+
+
+.habilidades li {
+    list-style: none;
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-top: 1px solid var(--cor-borda-cinza);
+}
+
+.habilidades li:last-child {
+    border-bottom: 1px solid var(--cor-borda-cinza);
+}
+
+
+/* ------------------ Main --------------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ------------------------------------------------------ Sobre mim -------------------------------------------*/
+
+#sobremim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    min-width: 800px;
+    margin: 60px auto;
+    border-radius: 20px;
+    height: 100%;
+    
+}
+
+.apresentacao {
+    background-color: var(--cor-terciaria);
+    padding: 50px;
+    margin: 0px auto;
+    max-width: 1100px;
+    border: 5px solid var(--cor-borda-cinza);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+    width: 900px;
+    height: 100%;
+    margin:50px;
+}
+
+.hobbies {
+    background-color: var(--cor-terciaria);
+    width: 500px;
+    min-width: 300px;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid var(--cor-borda-transp);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+    height: 100%;
+}
+
+.hobbies li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.hobbies li {
+    list-style: none;
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-top: 1px solid var(--cor-borda-cinza);
+}
+
+.hobbies li:last-child {
+    border-bottom: 1px solid var(--cor-borda-cinza);
+}
+
+.hobbies h3 {
+    text-align: center;
+}
+
+
+
+/* -------------------------------------------- Formação ---------------------------------------------------*/
+
+#formacao {
+    background-color:var(--cor-terciaria);
+    padding: 50px;
+    margin: 60px auto;
+    max-width: 1100px;
+    border: 5px solid var(--cor-borda-cinza);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-borda-transp);
+}
+
+#formacao span {
+    color: var(--cor-destaque);
+    font-weight: bold;
+}
+
+.grade-curricular {
+    display: flex;
+    gap: 120px;
+    margin-top: 20px;
+}
+
+.grade-curricular li {
+    color: var(--cor-texto-cinza);
+    font-weight: bolder;
+
+}
+
+
+
+
+/*------------------------------------------ Portifólio ------------------------------------------*/
+
+
+/* carrosel portifolio */
+.carrossel-container {
+    overflow: hidden;
+    width: 1200px;
+    margin: 60px auto;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+/* Remover scrollbar */
+.carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Botões de navegação do carrossel */
+.btn-carrossel {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto-white);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 24px;
+    border-radius: 20%;
+    margin: 20px;
+}
+
+.btn-carrossel:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Cards dos projetos */
+
+.card-projeto {
+    flex: 0 0 1200px;
+    border-radius: 20px;  
+    text-align: center;
+    background-color: var(--cor-terciaria);
+    border: 5px solid var(--cor-borda-transp);
+}
+
+.card-projeto img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.card-projeto p {
+    padding: 50px;
+    text-align: start;
+    text-align: justify;
+    hyphens: auto;
+    word-break: break-word;
+}
+
+.card-projeto h4 {
+    margin: 30px;
+    font-size: 2rem;
+    color: var(--cor-texto-white);
+}
+
+.contaier-proj-tec {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.projeto {
+    border: 5px solid var(--cor-borda-cinza);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.tecnologias li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tecnologias img {
+    width: 30px;
+    height:30px;
+}
+
+.tecnologias {
+    background-color: var(--cor-terciaria);
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid var(--cor-borda-cinza);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+    width: 300px;
+}
+
+
+.tecnologias li {
+    list-style: none;
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-top: 1px solid var(--cor-borda-cinza);
+}
+
+.tecnologias li:last-child {
+    border-bottom: 1px solid var(--cor-borda-cinza);
+}
+
+
+
+/* ------------------------------------- Contato ----------------------------------------*/
+
+#contato {
+    background-color:var(--cor-terciaria);
+    padding: 50px;
+    margin: 80px auto;
+    max-width: 1100px;
+    border: 5px solid var(--cor-borda-cinza);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--cor-sombra);
+}
+
+
