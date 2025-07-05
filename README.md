@@ -1,1 +1,1 @@
-https://github.com/thiagoroddev/portifolio](https://thiagoroddev.github.io/portifolio/
+https://thiagoroddev.github.io/portifolio/
