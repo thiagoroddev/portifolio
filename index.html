@@ -349,8 +349,33 @@
       <!-- Seção de CONTATO -->
 
       <section id="contato">
-        <h3>Contato</h3>
-        <p>Você pode me contatar através do email:</p>
+        <form
+          action="https://forsubmit.co/thiagoroddev@gmail.com"
+          method="post"
+          id="formContato"
+        >
+          <input type="hidden" name="_subject" value="Novo contato" />
+          <input type="hidden" name="_captcha" value="false" />
+          <h3>Contato</h3>
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            rows="20"
+            cols="50"
+            placeholder="Fale comigo por aqui..."
+            maxlength="200"
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
       </section>
     </main>
     <script src="main.js"></script>
