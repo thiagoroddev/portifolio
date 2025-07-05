@@ -349,21 +349,24 @@
       <!-- Seção de CONTATO -->
 
       <section id="contato">
+        <!-- Envia um email para o endereço que definir -->
         <form
-          action="https://forsubmit.co/thiagoroddev@gmail.com"
+          action="https://formsubmit.co/thiagoroddev@gmail.com"
           method="post"
           id="formContato"
         >
+          <!--Define o título do email que vou receber-->
           <input type="hidden" name="_subject" value="Novo contato" />
+          <!--Desativa o recaptcha padrão do FormSubmit-->
           <input type="hidden" name="_captcha" value="false" />
           <h3>Contato</h3>
           <div>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" />
+            <input type="text" name="nome" id="nome" required />
           </div>
           <div>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" required />
           </div>
           <textarea
             name="mensagem"
@@ -380,4 +383,13 @@
     </main>
     <script src="main.js"></script>
   </body>
+  <footer>
+    <p>Desenvolvido por Thiago Rod</p>
+    <a href="https://github.com/thiagoroddev">
+      <img src="/icons/github.png" alt="" />
+    </a>
+    <a href="https://www.linkedin.com/in/thiago-rodrigues-dev/">
+      <img src="/icons/linkedin.png" alt="" />
+    </a>
+  </footer>
 </html>

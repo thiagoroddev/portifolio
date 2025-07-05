@@ -15,7 +15,7 @@
     --cor-texto-cinza: #ffffff91;
     --cor-borda-transp: #11111149;
     --cor-borda-cinza:#eeebeb57;
-    --cor-sombra:#00000083;
+    --cor-sombra:#00000044;
 
 }
 
@@ -459,6 +459,7 @@ input {
     border-radius: 5px;
     border: none;
     margin: 5px;
+    box-shadow: 1px 1px 14px var(--cor-sombra);
 }
 
 input:focus {
@@ -477,6 +478,7 @@ textarea {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     resize: none;
+    box-shadow: 1px 1px 14px var(--cor-sombra);
 }
 
 textarea:focus {
@@ -490,6 +492,7 @@ form > button {
     border: var(--cor-borda-transp);
     font-weight: bolder;
     color: var(--cor-texto-white);
+    box-shadow: 1px 1px 14px var(--cor-sombra);
 
 }
 
@@ -499,3 +502,20 @@ form >button:hover {
     border: var(--cor-borda-cinza);
 }
 
+footer {
+    height: 100px;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+footer p {
+    margin: 10px;
+}
+
+footer img {
+    width: 25px;
+    margin: 5px;
+}

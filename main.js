@@ -35,7 +35,7 @@ form.addEventListener("submit", function (e) {
       if (response.ok) {
         alert("Mensagem enviada!");
         console.log("Mensagem enviada");
-        form.requestFullscreen();
+        form.reset();
       } else {
         alert("Não foi possível enviar a mensagem, tente mais uma vez");
         console.log("Não foi possível enviar a mensagem, tente mais uma vez");
