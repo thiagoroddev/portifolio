@@ -33,6 +33,29 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.separador-a {
+    height: 180px;
+    background-color: var(--cor-secundaria);
+    box-shadow: 2px 2px 20px var(--cor-sombra);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 50%;
+
+}
+
+.separador-a h2 {
+    color: var(--cor-texto-cinza);
 }
 
 .separador h2 {
@@ -84,6 +107,7 @@ section {
     position: fixed;
     width: 100%;
     box-shadow: 1px 1px 10px var(--cor-sombra);
+    z-index: 1;
 }
 
 .menu > ul li {
@@ -121,7 +145,8 @@ section {
     align-items: center;
     justify-items: center;
     min-width: 800px;
-    margin: 250px auto;
+    margin: 100px auto;
+    margin-top: 200px;
     border-radius: 20px;
 }
 
@@ -285,8 +310,9 @@ main {
 #formacao {
     background-color:var(--cor-terciaria);
     padding: 50px;
-    margin: 60px auto;
-    max-width: 1100px;
+    margin: 100px auto;
+    max-width: 1200px;
+    width: 1000px;
     border: 5px solid var(--cor-borda-cinza);
     border-radius: 20px;
     box-shadow: 0px 0px 20px var(--cor-borda-transp);
@@ -320,7 +346,7 @@ main {
 .carrossel-container {
     overflow: hidden;
     width: 1200px;
-    margin: 60px auto;
+    margin: 100px auto;
 }
 
 .carrossel {
@@ -341,7 +367,7 @@ main {
     border: none;
     padding: 15px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 0;
     font-size: 24px;
     border-radius: 20%;
     margin: 20px;
@@ -446,7 +472,7 @@ main {
 #contato {
     background-color:var(--cor-terciaria);
     padding: 50px;
-    margin: 80px auto;
+    margin: 100px auto;
     max-width: 1100px;
     border: 5px solid var(--cor-borda-cinza);
     border-radius: 20px;
