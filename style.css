@@ -324,13 +324,14 @@ main {
     align-items: center;
     justify-items: center;
     min-width: 800px;
-    margin: 100px auto;
+    margin: 0px auto;
+    width: 100%;
 }
 
 #formacao {
     background-color:var(--cor-terciaria);
     padding: 40px;
-    margin: 0px auto;
+    margin: 100px auto;
     max-width: 1200px;
     width: 1000px;
     border: 5px solid var(--cor-borda-cinza);
@@ -379,6 +380,7 @@ main {
 
 /* carrosel portifolio */
 .carrossel-container {
+   
     overflow: hidden;
     width: 1200px;
     margin: 100px auto;
@@ -509,12 +511,14 @@ main {
     justify-content: center;
     justify-items: center;
     align-items: center;
+    margin: 100px auto;
+    width: 100%;
 }
 
 #contato {
     background-color:var(--cor-terciaria);
     padding: 50px;
-    margin: 100px auto;
+    margin: 0px auto;
     max-width: 1100px;
     border: 5px solid var(--cor-borda-cinza);
     border-radius: 20px;
@@ -588,6 +592,8 @@ footer {
     justify-content: center;
     align-items: center;
     justify-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
 footer p {
